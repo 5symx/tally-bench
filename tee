@@ -1,0 +1,3 @@
+Running benchmarks on GPU: 0
+======== Collecting single-job performance with and without Tally ... ========
+loss at warmup: 5.083002090454102

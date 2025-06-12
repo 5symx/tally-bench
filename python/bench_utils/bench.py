@@ -479,7 +479,7 @@ def run_benchmark_suite(
     cuda_mem_cap = get_cuda_mem()
 
     curr_dir = os.getcwd()
-    os.environ["TALLY_HOME"] = f"{curr_dir}/tally"
+    os.environ["TALLY_HOME"] = f"/home/ymx/tally" #f"{curr_dir}/tally"
 
     result = load_json_from_file(result_file)
 

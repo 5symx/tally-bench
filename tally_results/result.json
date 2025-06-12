@@ -1,0 +1,66 @@
+{
+    "default": {
+        "pytorch_bert_train_32": {
+            "measurements": [
+                {
+                    "error": "[Errno 2] No such file or directory: './tally/scripts/start_client_local.sh'"
+                }
+            ]
+        },
+        "pytorch_pegasus-x-base_train_4": {
+            "measurements": [
+                {
+                    "error": "Detect process abort."
+                }
+            ]
+        },
+        "pytorch_whisper-large-v3_train_16": {
+            "measurements": [
+                {
+                    "error": "[Errno 2] No such file or directory: './tally/scripts/start_client_local.sh'"
+                }
+            ]
+        }
+    },
+    "tally_naive": {
+        "pytorch_bert_train_32": {
+            "measurements": [
+                {
+                    "error": "[Errno 2] No such file or directory: './tally/scripts/start_client.sh'",
+                    "tally_config": {
+                        "PRIORITY_MAX_ALLOWED_PREEMPTION_LATENCY_MS": "0.0316",
+                        "PRIORITY_USE_ORIGINAL_CONFIGS": "FALSE",
+                        "PRIORITY_USE_SPACE_SHARE": "FALSE",
+                        "SCHEDULER_POLICY": "NAIVE"
+                    }
+                }
+            ]
+        },
+        "pytorch_pegasus-x-base_train_4": {
+            "measurements": [
+                {
+                    "error": "Detect process abort.",
+                    "tally_config": {
+                        "PRIORITY_MAX_ALLOWED_PREEMPTION_LATENCY_MS": "0.0316",
+                        "PRIORITY_USE_ORIGINAL_CONFIGS": "FALSE",
+                        "PRIORITY_USE_SPACE_SHARE": "FALSE",
+                        "SCHEDULER_POLICY": "NAIVE"
+                    }
+                }
+            ]
+        },
+        "pytorch_whisper-large-v3_train_16": {
+            "measurements": [
+                {
+                    "error": "[Errno 2] No such file or directory: './tally/scripts/start_client.sh'",
+                    "tally_config": {
+                        "PRIORITY_MAX_ALLOWED_PREEMPTION_LATENCY_MS": "0.0316",
+                        "PRIORITY_USE_ORIGINAL_CONFIGS": "FALSE",
+                        "PRIORITY_USE_SPACE_SHARE": "FALSE",
+                        "SCHEDULER_POLICY": "NAIVE"
+                    }
+                }
+            ]
+        }
+    }
+}
