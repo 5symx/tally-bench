@@ -1,3 +1,4 @@
 [submodule "tally"]
 	path = tally
-	url = /home/ymx/tally
+	url = https://github.com/5symx/tally.git
+	branch = dev
