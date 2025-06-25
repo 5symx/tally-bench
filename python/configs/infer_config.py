@@ -15,9 +15,15 @@ inference_workloads = {
     ]
 }
 
-inference_workloads_small = {
-    "onnxruntime": [
+inference_workloads = {
+    "pytorch":[
         "bert",
-        "llama-2-7b"
+        "resnet"
+    ],
+}
+inference_workloads_small = {
+    "pytorch": [
+        "bert",
+        "resnet"
     ],
 }

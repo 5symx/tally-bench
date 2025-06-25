@@ -1,5 +1,19 @@
 {
     "default": {
+        "onnxruntime_bert_infer_single-stream_1": {
+            "measurements": [
+                {
+                    "error": "Detect process abort."
+                }
+            ]
+        },
+        "pytorch_bert_infer_single-stream_1": {
+            "measurements": [
+                {
+                    "error": "Detect process abort."
+                }
+            ]
+        },
         "pytorch_bert_train_32": {
             "measurements": [
                 {
@@ -7,7 +21,28 @@
                 }
             ]
         },
+        "pytorch_gpt2-large_train_1": {
+            "measurements": [
+                {
+                    "error": "Detect process abort."
+                }
+            ]
+        },
         "pytorch_pegasus-x-base_train_4": {
+            "measurements": [
+                {
+                    "error": "Detect process abort."
+                }
+            ]
+        },
+        "pytorch_pointnet_train_128": {
+            "measurements": [
+                {
+                    "error": "Detect process abort."
+                }
+            ]
+        },
+        "pytorch_resnet50_train_128": {
             "measurements": [
                 {
                     "error": "Detect process abort."
@@ -23,6 +58,32 @@
         }
     },
     "tally_naive": {
+        "onnxruntime_bert_infer_single-stream_1": {
+            "measurements": [
+                {
+                    "error": "Detect process abort.",
+                    "tally_config": {
+                        "PRIORITY_MAX_ALLOWED_PREEMPTION_LATENCY_MS": "0.0316",
+                        "PRIORITY_USE_ORIGINAL_CONFIGS": "FALSE",
+                        "PRIORITY_USE_SPACE_SHARE": "FALSE",
+                        "SCHEDULER_POLICY": "NAIVE"
+                    }
+                }
+            ]
+        },
+        "pytorch_bert_infer_single-stream_1": {
+            "measurements": [
+                {
+                    "error": "Detect process abort.",
+                    "tally_config": {
+                        "PRIORITY_MAX_ALLOWED_PREEMPTION_LATENCY_MS": "0.0316",
+                        "PRIORITY_USE_ORIGINAL_CONFIGS": "FALSE",
+                        "PRIORITY_USE_SPACE_SHARE": "FALSE",
+                        "SCHEDULER_POLICY": "NAIVE"
+                    }
+                }
+            ]
+        },
         "pytorch_bert_train_32": {
             "measurements": [
                 {
@@ -36,7 +97,46 @@
                 }
             ]
         },
+        "pytorch_gpt2-large_train_1": {
+            "measurements": [
+                {
+                    "error": "Detect process abort.",
+                    "tally_config": {
+                        "PRIORITY_MAX_ALLOWED_PREEMPTION_LATENCY_MS": "0.0316",
+                        "PRIORITY_USE_ORIGINAL_CONFIGS": "FALSE",
+                        "PRIORITY_USE_SPACE_SHARE": "FALSE",
+                        "SCHEDULER_POLICY": "NAIVE"
+                    }
+                }
+            ]
+        },
         "pytorch_pegasus-x-base_train_4": {
+            "measurements": [
+                {
+                    "error": "Detect process abort.",
+                    "tally_config": {
+                        "PRIORITY_MAX_ALLOWED_PREEMPTION_LATENCY_MS": "0.0316",
+                        "PRIORITY_USE_ORIGINAL_CONFIGS": "FALSE",
+                        "PRIORITY_USE_SPACE_SHARE": "FALSE",
+                        "SCHEDULER_POLICY": "NAIVE"
+                    }
+                }
+            ]
+        },
+        "pytorch_pointnet_train_128": {
+            "measurements": [
+                {
+                    "error": "Detect process abort.",
+                    "tally_config": {
+                        "PRIORITY_MAX_ALLOWED_PREEMPTION_LATENCY_MS": "0.0316",
+                        "PRIORITY_USE_ORIGINAL_CONFIGS": "FALSE",
+                        "PRIORITY_USE_SPACE_SHARE": "FALSE",
+                        "SCHEDULER_POLICY": "NAIVE"
+                    }
+                }
+            ]
+        },
+        "pytorch_resnet50_train_128": {
             "measurements": [
                 {
                     "error": "Detect process abort.",

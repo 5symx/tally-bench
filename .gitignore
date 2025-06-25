@@ -56,4 +56,5 @@ perf_results/
 runs/
 tally-bench-results/
 whisper-log/
+data/
 tally-results/
