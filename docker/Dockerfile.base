@@ -100,11 +100,11 @@ RUN cp /usr/include/cudnn*.h /usr/local/cuda/include && \
     cp -P /usr/lib/$(uname -m)-linux-gnu/libcudnn* /usr/local/cuda/lib64 && \
     chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
 
-WORKDIR /home/ymx/tally-bench
+WORKDIR /home/ymx
 
-COPY tally tally
+#COPY /home/ymx/tally tally
 
-RUN mkdir tally
+#RUN mkdir tally
 
 COPY tally/third_party tally/third_party
 
@@ -113,7 +113,7 @@ RUN cd tally/third_party && \
  
 RUN cd tally/third_party/nccl && \
     make -j src.build \
-        NVCC_GENCODE="-gencode=arch=compute_80,code=compute_80 -gencode=arch=compute_80,code=sm_80"
+        NVCC_GENCODE="-gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86"
 
 COPY tally/include tally/include
 COPY tally/src tally/src
@@ -123,7 +123,7 @@ COPY tally/Makefile tally/Makefile
 COPY tally/config tally/config
 COPY tally/scripts tally/scripts
 
-ENV CUDA_ARCH_LIST="80"
+ENV CUDA_ARCH_LIST="86"
 
 RUN cd tally && mkdir -p build && cd build && cmake .. && make -j
 

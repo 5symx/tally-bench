@@ -1,4 +1,4 @@
 [submodule "tally"]
 	path = tally
-	url = https://github.com/5symx/tally.git
-	branch = dev
+	url = git@github.com:5symx/tally.git
+	branch = dev-vmm
